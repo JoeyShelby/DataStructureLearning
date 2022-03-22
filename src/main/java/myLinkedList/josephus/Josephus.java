@@ -39,14 +39,6 @@ public class Josephus {
         }
     }
 
-    public void showCircle(){
-        CircleNode cur = first;
-        while(true) {
-            System.out.println(cur);
-            cur = cur.getNext();
-            if(cur == first) break;
-        }
-    }
 
     public void playGame() { //玩约瑟夫环
         CircleNode cur = first;
