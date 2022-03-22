@@ -1,4 +1,4 @@
-package myLinkedList.Josephus;
+package myLinkedList.josephus;
 
 /**
  * 环的节点

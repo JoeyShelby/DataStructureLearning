@@ -1,6 +1,6 @@
 package myLinkedList.test;
 
-import myLinkedList.Josephus.Josephus;
+import myLinkedList.josephus.Josephus;
 
 public class TestJosephus {
     public static void main(String[] args) {

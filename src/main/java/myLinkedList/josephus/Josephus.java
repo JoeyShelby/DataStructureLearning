@@ -1,8 +1,5 @@
-package myLinkedList.Josephus;
+package myLinkedList.josephus;
 
-
-import jdk.swing.interop.SwingInterOpUtils;
-import org.w3c.dom.Node;
 
 /**
  * 使用环形单向链表解决约瑟夫环问题
