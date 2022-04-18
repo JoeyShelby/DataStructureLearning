@@ -1,8 +1,8 @@
 package myStack.test;
 
-import myStack.infixCalculator.ArrayStack;
+import myStack.arrayStack.ArrayStack;
 
-public class testArrayStack {
+public class TestArrayStack {
     public static void main(String[] args) {
         ArrayStack<String> stack = new ArrayStack<>(10);
 

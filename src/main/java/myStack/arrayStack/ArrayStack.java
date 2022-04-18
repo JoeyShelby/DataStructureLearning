@@ -1,4 +1,4 @@
-package myStack.infixCalculator;
+package myStack.arrayStack;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -42,8 +42,7 @@ public class ArrayStack <T>{
         if(this.isFull()) {
             System.out.println("当前栈已满！");
         } else {
-            this.top++;
-            this.stack.add(element);
+            this.stack.add(++this.top,element);
         }
     }
 
