@@ -1,20 +1,21 @@
-package myStack.arrayStack;
+package myStack.infixCalculator;
 
-/**
- * 使用数组实现栈
- */
-public class ArrayStack {
+import java.util.ArrayList;
+import java.util.List;
+
+//栈
+public class ArrayStack <T>{
     private int maxSize; //栈的最大容量
-    private int[] stack;
+    private List<T> stack;
     private int top = -1; //栈顶，空时为 -1
 
     /**
      * 构造方法：指定栈的大小
      * @param maxSize
      */
-    public ArrayStack(int maxSize) {
+    public ArrayStack (int maxSize) {
         this.maxSize = maxSize;
-        this.stack = new int[maxSize];
+        this.stack = new ArrayList<>(maxSize);
     }
 
     /**
@@ -22,7 +23,7 @@ public class ArrayStack {
      * @return
      */
     public boolean isFull() {
-        return top == this.stack.length - 1;
+        return top == maxSize - 1;
     }
 
     /**
@@ -37,25 +38,40 @@ public class ArrayStack {
      * 入栈
      * @param element
      */
-    public void push(int element) {
+    public void push(T element) {
         if(this.isFull()) {
             System.out.println("当前栈已满！");
         } else {
-            this.stack[++this.top] = element;
+            this.top++;
+            this.stack.add(element);
         }
+    }
+
+
+    /**
+     * 查看栈
+     * @return
+     */
+    public T get() {
+        if(this.isEmpty()) {
+            System.out.println("当前栈为空！");
+            return null;
+        }
+
+        return this.stack.get(this.top);
     }
 
     /**
      * 出栈
      * @return
      */
-    public int pop() {
+    public T pop() {
         if(this.isEmpty()) {
             System.out.println("当前栈为空！");
-            return -1;
+            return null;
         }
 
-        return this.stack[this.top--];
+        return this.stack.get(this.top--);
     }
 
     /**
@@ -71,9 +87,7 @@ public class ArrayStack {
         }
 
         for(int i = this.top; i >= 0; i--) {
-            System.out.println(this.stack[i]);
+            System.out.println(this.stack.get(i));
         }
     }
-
-
 }
