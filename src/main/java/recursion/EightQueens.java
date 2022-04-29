@@ -34,6 +34,7 @@ public class EightQueens {
                 put(n+1);
             }
         }
+      //  return;   如果for循环走完，即遍历完了当前行，均冲突，则会回溯return。
     }
 
     /**
