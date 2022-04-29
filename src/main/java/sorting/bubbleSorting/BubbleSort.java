@@ -4,6 +4,10 @@ package sorting.bubbleSorting;
  * @author: JoeyShelby
  * @date: 2022-04-29 15:09
  */
+
+/**
+ * 冒泡排序
+ */
 public class BubbleSort {
     /**
      * 一般的冒泡排序
@@ -13,7 +17,7 @@ public class BubbleSort {
      */
     public static Integer[] bubbleSort(Integer[] nums) {
         int size = nums.length;
-        for(int i=0; i < size; i++ ) {
+        for(int i=0; i < size - 1; i++ ) {
             for(int j = 1; j < size - i; j++) {
                 if(nums[j-1] > nums[j]) {
                     int tmp = nums[j-1];
