@@ -10,7 +10,7 @@ import java.util.Arrays;
  */
 public class QuickSortTest {
     public static void main(String[] args) {
-        Integer[] nums = {3,3,3,3,3,3};
+        Integer[] nums = {101, 34, 119, 1};
         QuickSort.sort(nums,0,nums.length-1);
         System.out.println(Arrays.toString(nums));
     }
