@@ -1,4 +1,4 @@
-package sorting.test;
+package sorting.MergeSorting.test;
 
 import sorting.insertSorting.InsertSort;
 
