@@ -1,4 +1,4 @@
-package sorting.MergeSorting.test;
+package sorting.test;
 
 import sorting.shellSorting.ShellSort;
 

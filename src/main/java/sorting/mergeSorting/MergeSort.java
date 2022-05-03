@@ -1,4 +1,4 @@
-package sorting.MergeSorting;
+package sorting.mergeSorting;
 
 /**
  * @author: JoeyShelby

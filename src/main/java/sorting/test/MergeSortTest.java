@@ -1,6 +1,6 @@
-package sorting.MergeSorting.test;
+package sorting.test;
 
-import sorting.MergeSorting.MergeSort;
+import sorting.mergeSorting.MergeSort;
 
 import java.util.Arrays;
 
